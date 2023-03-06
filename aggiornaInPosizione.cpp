@@ -2,7 +2,7 @@
 using namespace std;
 
 
-int *aggiungiInPosizione(int arr[], int len, int n, int pos)
+int *aggiornaInPosizione(int arr[], int len, int n, int pos)
 {
     int len2 = len + 1;
     int arr2[len2];
@@ -32,9 +32,9 @@ int *aggiungiInPosizione(int arr[], int len, int n, int pos)
 
 int main()
 {
-    int arr1[5] = {1, 2, 3, 4, 5};
+    int arr1[5] = {1, 1, 1, 1, 1};
     int len1 = sizeof(arr1) / sizeof(arr1[0]);
-    int n = 6;
+    int n = 3;
     int pos= 5;
-    int* arr3 = aggiungiInPosizione (arr1,len1, n, pos );
+    int* arr3 = aggiornaInPosizione (arr1,len1, n, pos );
 }
