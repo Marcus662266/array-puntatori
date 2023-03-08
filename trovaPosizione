@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int trovaPosizione(int arr[], int len, int cercaN , int pos)
+{
+    for (int i = 0; i < len; i++)
+    {
+       for (int j = 0; i < pos-1; j++)
+       {
+        if (arr[i] == cercaN)
+        {
+            return i;
+        }
+       }
+        
+    }
+    return -1;
+}
+
+int main()
+{
+    int arr[3] = {1, 2, 5};
+    int len = 3;
+    int cercaN = 2;
+    int pos = trovaPosizione(arr, len , cercaN, pos );
+
+    if (pos != -1)
+    {
+        cout << "Il numero " << cercaN << " si trova nella posizione " << pos << endl;
+    }
+    else
+    {
+        cout << "Il numero " << cercaN << " non si trova nell'array" << endl;
+    }
+
+    return 0;
+}

@@ -1,2 +1,0 @@
-// stampa del nuovo array
-    }
